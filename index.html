@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picasso</title>
+    <link rel="stylesheet" href="picasso.css">
+    <style>
+        /* Additional CSS for header */
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #f3820a;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        /* Adjustments for mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            .grid-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .box {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* CSS for grid boxes */
+        .box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Styling for form section */
+        section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        section h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        section form {
+            display: inline-block;
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        section form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        section form input[type="text"],
+        section form input[type="email"] {
+            width: var(--input-width, 100%); /* Default width */
+            height: var(--input-height, auto); /* Default height */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em; /* Adjust font size */
+        }
+
+        section form input[type="submit"] {
+            background-color: #f3820a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1em; /* Adjust font size */
+        }
+
+        section form input[type="submit"]:hover {
+            background-color: #d16b07;
+        }
+    </style>
+</head>
+<body>
+
+<header> Art Gallery </header>
+
+<div class="grid-container">
+    <div class="box">
+        <img src="https://media.tenor.com/hLq3BZAL62EAAAAM/gojo.gif" alt="Art 1">
+        <h2>Box 1</h2>
+    </div>
+    <div class="box">
+        <img src="https://media.tenor.com/A8QmSdIvz3YAAAAM/anime-anme-hug.gif" alt="Art 2">
+        <h2>Box 2</h2>
+    </div>
+    <div class="box">
+        <img src="https://media.tenor.com/qmD595_UlFwAAAAM/toy-story-look-im-picasso.gif" alt="Art 3">
+        <h2>Box 3</h2>
+    </div>
+    <!-- Box 4 -->
+    <div class="box">
+        <img src="https://media.tenor.com/_IFXBsQu6sIAAAAM/sao-sword-art-online.gif" alt="Art 4">
+        <h2>Box 4</h2>
+    </div>
+    <!-- Box 5 -->
+    <div class="box">
+        <img src="https://media.tenor.com/XUXDZSGgqk4AAAAM/kaveh-genshin-impact.gif" alt="Art 5">
+        <h2>Box 5</h2>
+    </div>
+    <!-- Box 6 -->
+    <div class="box">
+        <img src="https://media.tenor.com/aF0ipAtOk9cAAAAM/spy-x-family-anya.gif" alt="Art 6">
+        <h2>Box 6</h2>
+    </div>
+</div>
+
+<section>
+    <h1>Interested in our Art Gallery?</h1>
+    <p>Please provide your name and email:</p>
+
+    <form action="thankyou.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" style="--input-width: 300px; --input-height: 40px;" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" style="--input-width: 300px; --input-height: 40px;" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+</body>
+</html>

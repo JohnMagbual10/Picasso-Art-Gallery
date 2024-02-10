@@ -1,0 +1,27 @@
+.grid-container {background-color: rgb(36, 33, 33);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax value as needed */
+  gap: 20px;
+  width: 100%; /* Set width to 100% */
+  padding: 20px;
+}
+
+.box {
+  background-color: #436baf;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.box h2 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* Add additional styles as needed */
+
